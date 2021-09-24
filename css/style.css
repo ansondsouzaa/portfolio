@@ -61,10 +61,10 @@ change:before{
 
 @keyframes animate {
     0%{
-        content:'Full stack web developer';
+        content:'UI & UX designer';
     }
     50%{
-        content:'UI & UX designer';
+        content:'Full stack web developer';
     }
     100%{
         content:'Wordpress developer';
@@ -87,6 +87,10 @@ body {
 
 .h-50 {
     height: 50px;
+}
+
+.h-20 {
+    height: 20px;
 }
 
 
@@ -330,10 +334,13 @@ a.active {
 
 /* experience section
 ==================================================*/
-
-#experience, #education {
+#education {
     padding: 100px 0;
     background: #f3f3f3
+}
+
+#experience{
+    padding: 100px 0;
 }
 
 .experience-row {
@@ -458,6 +465,7 @@ a.active {
 
 #projects {
     padding: 100px 0;
+    background: #f3f3f3
 }
 
 .portfolio .categories-grid span {
