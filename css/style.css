@@ -54,7 +54,8 @@ h2 {
     font-size: 50px;
 }
 
-change:before{
+
+span:before{
     content: '';
     animation: animate infinite 15s;
 }
@@ -71,6 +72,36 @@ change:before{
     }
 }
 
+/* Dashed */
+
+.dashed {
+  position: relative;
+  
+  padding-bottom: .75em;
+  text-decoration: none;
+  
+}
+
+.dashed:after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 10%;
+  height: 3px;
+  
+  content: "";
+  transform: translateX(-50%);
+  transition: width .1s ease-in-out;
+  
+  background-color: #000000;
+}
+
+.dashed:hover:after {
+  width: 20%;
+}
+
+
+
 /* General
 ==================================================*/
 
@@ -78,6 +109,33 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .size-50 {
@@ -91,6 +149,10 @@ body {
 
 .h-20 {
     height: 20px;
+}
+
+h-10 {
+    height: 10px;
 }
 
 
@@ -468,7 +530,7 @@ a.active {
     background: #f3f3f3
 }
 
-.portfolio .categories-grid span {
+.portfolio .categories-grid title {
     font-size: 30px;
     margin-bottom: 30px;
     display: inline-block;
@@ -509,7 +571,7 @@ a.active {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
-    height: 300px;
+    height: 250px;
     width: 100%;
 }
 
@@ -540,7 +602,7 @@ a.active {
     font-weight: bold;
 }
 
-.portfolio_item .portfolio_item_hover .item_info span {
+.portfolio_item .portfolio_item_hover .item_info title {
     display: block;
     color: #fff;
     font-size: 20px;
@@ -577,7 +639,7 @@ a.active {
 }
 
 .portfolio_item:hover .item_info em,
-.portfolio_item:hover .item_info span {
+.portfolio_item:hover .item_info title {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -601,8 +663,11 @@ a.active {
 }
 
 .portfolio_item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(20%);
+    filter: grayscale(20%);
+    height: 250px;
+    width: 100%;
+    border: 2px solid #b49d18;
 }
 
 .portfolio-padding {
@@ -641,6 +706,21 @@ a.active {
 .animatedModal-on .close-popup-modal {
     opacity: 1;
 }
+.animatedModal2-on .close-popup-modal {
+    opacity: 1;
+}
+.animatedModal3-on .close-popup-modal {
+    opacity: 1;
+}
+.animatedModal4-on .close-popup-modal {
+    opacity: 1;
+}
+.animatedModal5-on .close-popup-modal {
+    opacity: 1;
+}
+.animatedModal6-on .close-popup-modal {
+    opacity: 1;
+}
 
 .modal-content h2 {
     font-family: 'Playfair Display', serif;
@@ -651,6 +731,7 @@ a.active {
 .hr{
     color: #000;
 }
+
 
 /* contact
 ==================================================*/
