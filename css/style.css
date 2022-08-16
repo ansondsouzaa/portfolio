@@ -54,6 +54,9 @@ h2 {
     font-size: 50px;
 }
 
+.red {
+    color: red;
+}
 
 span:before {
     content: '';
@@ -65,12 +68,8 @@ span:before {
         content: 'UI & UX designer';
     }
 
-    50% {
-        content: 'Full stack web developer';
-    }
-
     100% {
-        content: 'Wordpress developer';
+        content: 'Full stack web developer';
     }
 }
 
