@@ -65,11 +65,15 @@ span:before {
 
 @keyframes animate {
     0% {
+        content: 'Full stack web developer';
+    }
+
+    50% {
         content: 'UI & UX designer';
     }
 
     100% {
-        content: 'Full stack web developer';
+        content: 'Software Engineer';
     }
 }
 
