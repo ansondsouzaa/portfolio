@@ -63,6 +63,11 @@ span:before {
     animation: animate infinite 15s;
 }
 
+.logo {
+    width: 200px;
+    margin-right: 20%;
+}
+
 @keyframes animate {
     0% {
         content: 'Full stack web developer';
@@ -912,51 +917,10 @@ fieldset {
     color: #dfbe00;
 }
 
-
-/* Responsive media queries
-==================================================*/
-
-@media (max-width: 991px) {
-    .portfolio .categories-grid .categories ul li a {
-        padding: 0 2px;
-    }
+.img-responsive {
+    width: 250px !important;
 }
 
-@media (max-width: 768px) {
-    .timeline-event-copy {
-        width: 90%;
-        left: 2em;
-    }
-}
-
-@media (max-width: 500px) {
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 50px;
-        line-height: 50px;
-    }
-
-    #home,
-    .disply-table {
-        height: 600px;
-    }
-
-    .about-border {
-        width: 265px;
-    }
-
-    .portfolio .categories-grid .categories ul li {
-        list-style: none;
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 420px) {
-    nav li {
-        margin: 6px;
-    }
-
-    nav li a {
-        font-size: 10px;
-    }
+.img-responsive-2 {
+    width: 250px !important;
 }
