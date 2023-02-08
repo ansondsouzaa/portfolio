@@ -119,6 +119,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
+    width: 100%;
 }
 
 h3 {
@@ -923,4 +924,8 @@ fieldset {
 
 .img-responsive-2 {
     width: 250px !important;
+}
+
+.img-responsive-1 {
+    margin-left: 120px !important;
 }

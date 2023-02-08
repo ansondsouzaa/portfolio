@@ -1,13 +1,24 @@
 @media only screen and (max-width: 600px) {
 
-    portfolio_item {
-        overflow: hidden;
+    #home {
+        background: url(../img/bg2.jpg);
+        background-size: auto;
+        height: 100vh;
+    }
+
+    #experience {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     h1 {
         margin-left: 10px;
         font-size: 25px;
         line-height: 100%;
+    }
+
+    .size-50 {
+        font-size: 35px;
     }
 
     h2 {
@@ -21,6 +32,11 @@
         font-size: 22px !important;
         line-height: 110%;
         color: black;
+    }
+
+    h5 {
+        margin: auto;
+        text-align: left;
     }
 
     .navbar-fixed-top {
@@ -59,6 +75,16 @@
     .img-responsive-2 {
         width: 180px !important;
         margin-bottom: 120px;
+    }
+
+    .img-responsive-1 {
+        margin-left: auto !important;
+    }
+
+    .project-img {
+        width: 100% !important;
+        height: auto;
+        margin-top: 10%;
     }
 }
 
