@@ -503,6 +503,7 @@ a.active {
 }
 
 .timeline-event-copy {
+    padding-top: 20px;
     position: relative;
     top: -1.875em;
     left: 4em;
@@ -942,11 +943,13 @@ fieldset {
 }
 
 .img-responsive {
-    width: 250px !important;
+    width: 180px !important;
+    margin-left: 150px !important;
 }
 
 .img-responsive-2 {
-    width: 250px !important;
+    width: 180px !important;
+    margin-left: 150px !important;
 }
 
 .img-responsive-1 {
