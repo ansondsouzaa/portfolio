@@ -1,35 +1,39 @@
 @media only screen and (max-width: 600px) {
 
     #home {
-        background: url(../img/bg2.jpg);
+        background: url(../img/Home/bg2.jpg);
         background-size: auto;
-        height: 100vh;
+        height: 100vh !important;
     }
 
     #experience {
         max-width: 100%;
+        padding: 30px 0px !important;
         overflow-x: hidden;
+    }
+
+    #about, #projects, #education, #contact{
+        padding: 30px 0px !important;
     }
 
     h1 {
         margin-left: 10px;
-        font-size: 25px;
+        font-size: 18px;
         line-height: 100%;
     }
 
     .size-50 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     h2 {
         margin-left: 10px;
-        font-size: 22px;
+        font-size: 18px;
         line-height: 100%;
-        color: black;
     }
 
     h3 {
-        font-size: 22px !important;
+        font-size: 18px !important;
         line-height: 110%;
         color: black;
     }
@@ -63,29 +67,62 @@
     }
 
     .about-border {
-        display: none;
+        position: absolute;
+        border: 5px solid #dfbe00;
+        width: 100% !important;
+        height: 350px !important;
+        left: 0px !important;
+        z-index: 1;
+        border-radius: 100% !important;
     }
 
     .img-responsive {
-        width: 180px !important;
-        margin-bottom: 120px;
-        margin-left: 100px;
-    }
-
-    .img-responsive-2 {
-        width: 180px !important;
-        margin-bottom: 120px;
+        width: 150px !important;
+        margin: -20px 0px 100px 20px !important;
     }
 
     .img-responsive-1 {
         margin-left: auto !important;
     }
 
+    .img-responsive-2 {
+        width: 150px !important;
+        margin: -20px 0px 100px 20px !important;
+    }  
+
     .project-img {
         width: 100% !important;
         height: auto;
         margin-top: 10%;
     }
+
+    #gif{
+        position: absolute;
+        background: #fff url(../img/preloader/preaload.gif) center center no-repeat ;
+        background-size: cover;
+        height: 120px;
+        width: 120px;
+        margin: -30px 0 0 -30px;
+        left: 40%;
+        top: 45%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    .timeline-event-icon, .timeline-event-icon-2, .timeline:before {
+        display: none;
+    }
+
+    .left-15 {
+        left: -10px;
+    }
+
 }
 
 /* Responsive media queries
