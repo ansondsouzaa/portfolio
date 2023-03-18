@@ -107,7 +107,7 @@ span:before {
     transform: translateX(-50%);
     transition: width .1s ease-in-out;
 
-    background-color: #dfbe00;
+    background-color: #D84627;
 }
 
 .dashed:hover:after {
@@ -120,6 +120,9 @@ span:before {
 ==================================================*/
 
 body {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -370,12 +373,12 @@ a:focus {
 }
 
 a:hover {
-    color: #dfbe00;
+    color: #D84627;
     text-decoration: none;
 }
 
 a.active {
-    color: #dfbe00;
+    color: #D84627;
 }
 
 .left-15{
@@ -415,18 +418,6 @@ a.active {
     margin: 0 auto;
 }
 
-.about-border {
-    position: absolute;
-    border: 5px solid #dfbe00;
-    width: 400px;
-    height: 400px;
-    top: -30px;
-    left: 80px;
-    z-index: 1;
-    border-radius: 500px;
-    margin-top: 100px;
-}
-
 
 /* experience section
 ==================================================*/
@@ -448,7 +439,7 @@ a.active {
     font-family: 'Lato', sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
-    color: #dfbe00;
+    color: #D84627;
     font-size: 16px;
     font-weight: bold
 }
@@ -564,12 +555,6 @@ a.active {
 }
 
 .timeline-event-thumbnail {
-    -moz-transition: box-shadow 0.5s ease-in 0.1s;
-    -o-transition: box-shadow 0.5s ease-in 0.1s;
-    -webkit-transition: box-shadow 0.5s ease-in;
-    -webkit-transition-delay: 0.1s;
-    -webkit-transition: box-shadow 0.5s ease-in 0.1s;
-    transition: box-shadow 0.5s ease-in 0.1s;
     background-color: rgba(255, 255, 255, 0) !important;
     border: 1px solid black;
     color: black;
@@ -616,7 +601,7 @@ a.active {
 }
 
 .portfolio .categories-grid .categories ul li a.active {
-    background-color: #dfbe00;
+    background-color: #D84627;
     padding: 0px 20px;
     color: white;
     text-decoration: none;
@@ -631,7 +616,7 @@ a.active {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
-    height: 250px;
+    height: 300px;
     width: 100%;
 }
 
@@ -641,7 +626,7 @@ a.active {
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color: #dfbe00;
+    background-color: #D84627;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
@@ -677,7 +662,7 @@ a.active {
 .portfolio_item .portfolio_item_hover .item_info em {
     font-style: normal;
     display: inline-block;
-    background-color: #dfbe00;
+    background-color: #D84627;
     padding: 5px 20px;
     color: #fff;
     margin-top: 10px;
@@ -725,9 +710,9 @@ a.active {
 .portfolio_item img {
     -webkit-filter: grayscale(20%);
     filter: grayscale(20%);
-    height: 250px;
+    height: 300px;
     width: 100%;
-    border: 2px solid #dfbe00;
+    border: 2px solid #D84627;
 }
 
 .portfolio-padding {
@@ -786,6 +771,23 @@ a.active {
 .animatedModal6-on .close-popup-modal {
     opacity: 1;
 }
+
+.animatedModal7-on .close-popup-modal {
+    opacity: 1;
+}
+
+.animatedModal8-on .close-popup-modal {
+    opacity: 1;
+}
+
+.animatedModal9-on .close-popup-modal {
+    opacity: 1;
+}
+
+.animatedModal10-on .close-popup-modal {
+    opacity: 1;
+}
+
 
 .modal-content h2 {
     font-family: 'Playfair Display', serif;
@@ -876,11 +878,11 @@ fieldset {
 }
 
 #success p {
-    color: #dfbe00;
+    color: #D84627;
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    border: 2px solid #dfbe00;
+    border: 2px solid #D84627;
     margin-top: 10px;
 }
 
@@ -894,7 +896,7 @@ fieldset {
 }
 
 #submit {
-    background-color: #dfbe00;
+    background-color: #D84627;
     color: #fff;
     padding: 10px 40px;
     border-radius: 0;
@@ -905,7 +907,7 @@ fieldset {
 }
 
 #resume {
-    background-color: #dfbe00;
+    background-color: #D84627;
     color: #fff;
     padding: 10px;
     border-radius: 0;
@@ -918,6 +920,7 @@ fieldset {
 .navbar-fixed-top {
     background-color: #000 !important;
     color: #fff !important;
+    border: none;
 }
 
 .social {
@@ -939,7 +942,7 @@ fieldset {
 }
 
 .social li a:hover {
-    color: #dfbe00;
+    color: #D84627;
 }
 
 .img-responsive {
@@ -956,4 +959,7 @@ fieldset {
     width: 100%;
     margin-top: 100px !important;
     margin-left: 100px !important;
+    border: 5px solid #D84627;
+    padding: 20px;
+    border-radius: 500px;
 }

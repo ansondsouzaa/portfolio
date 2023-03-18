@@ -122,5 +122,17 @@ $(document).ready(function () {
     $("#demo06").animatedModal({
         modalTarget: 'animatedModal6',
     });
+    $("#demo07").animatedModal({
+        modalTarget: 'animatedModal7',
+    });
+    $("#demo08").animatedModal({
+        modalTarget: 'animatedModal8',
+    });
+    $("#demo09").animatedModal({
+        modalTarget: 'animatedModal9',
+    });
+    $("#demo10").animatedModal({
+        modalTarget: 'animatedModal10',
+    });
 
 });

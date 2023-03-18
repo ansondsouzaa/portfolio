@@ -5,8 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Anson Dsouza - Portfolio</title>
-    <link rel="icon" href="img/Home/favicon.ico" type="image/x-icon" />
+    <title>Portfolio - Anson Dsouza</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/Home/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Home/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Home/favicon-16x16.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet" />
@@ -15,12 +17,16 @@
     <!-- main style -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/reponsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        document.oncontextmenu = new Function("return false");
+    </script>
 </head>
 
 <body>
@@ -35,10 +41,13 @@
     <!-- ./Preloader -->
 
     <!-- header -->
-    <header class="navbar-fixed-top">
+    <header class="navbar-fixed-top" id="nav">
         <nav>
             <a href="#"><img src="img/Home/logo-dark.png" class="logo" /></a>
-            <ul class="menu">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul class="menu" id="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">education</a></li>
                 <li><a href="#experience">Work Experience</a></li>
@@ -47,6 +56,19 @@
             </ul>
         </nav>
     </header>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("nav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                y.style.height = "auto";
+            } else {
+                x.style.display = "block";
+                y.style.height = "150px";
+            }
+        }
+    </script>
     <!-- ./header -->
 
     <!-- home -->
@@ -72,26 +94,27 @@
                 <div class="h-20"></div>
                 <p></p>
                 <p>
-                    Hi, I am Anson Dsouza. I stepped into the field of Information
-                    Techology when I was 18 years old. I am passionate about computers
-                    hardware and software alike. I decided that I wanted to become a
-                    professional in a field where most of my interest was, which is in
-                    'Software Development or generally coding', hence I started with
-                    Full Stack Web Development.
+                    Hi there, my name is Anson Dsouza and I am a passionate Information Technology professional. My love
+                    for computers began at the age of 18, and since then I have been deeply invested in the hardware and
+                    software aspects of computing.
                     <br />
-                    I got myself a Diploma from Pearson's BTec Level 5 Course in
-                    Computing and now pursuing an International Degree for Bachelors in
-                    Computer Science from UoR.
+                    As I began exploring the field of IT, I quickly realized that my true passion lay in coding and
+                    software development. With this realization, I embarked on a journey to become a professional in
+                    this field, starting with Full Stack Web Development.
                     <br />
-                    I always look forward to learning new things in my field and my goal
-                    is to become a full fledged ethical hacker.
+                    To further my education and career prospects, I pursued a Diploma from Pearson's BTEC Level 5 Course
+                    in Computing, and I am now working towards an International Degree in Computer Science from the
+                    University of Roehampton (London).
                     <br />
-                    I grap every opportunity that comes in my way and appretiate new job
-                    opportunities and tasks that challenges me to do new research and
-                    work on new things I've never heard of before which gives me a great
-                    sense of accomplishment to complete the tasks at hand and one thing
-                    about me that I am persistant until and unless I finish my work
-                    properly.
+                    I am always eager to expand my knowledge and skills in the field of IT, and my ultimate goal is to
+                    become a full-fledged ethical hacker. I am constantly seeking out new challenges and opportunities
+                    to learn, and I thrive on taking on new job opportunities and tasks that push me to explore new
+                    areas and concepts that I have not encountered before.
+                    <br />
+                    My perseverance is one of my defining characteristics - I will not rest until a task is completed to
+                    the best of my ability. I take great pride in accomplishing difficult tasks and achieving my goals.
+                    <br />
+                    Thank you for taking the time to learn more about me.
                 </p>
                 <div class="h-20"></div>
                 <p>
@@ -100,7 +123,6 @@
                 </p>
             </div>
             <div class="col-md-4 col-sm-12 about-img-div">
-                <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
                 <img src="img/Home/photo.png" width="250" class="img-responsive-1" alt="" position="centre"
                     data-aos="fade-right" data-aos-delay="0" />
             </div>
@@ -128,8 +150,7 @@
                                     </p>
                                     <h3>University of Roehampton (London)</h3>
                                     <p>
-                                        <strong>International Bachelor’s Degree (Honours)<br />
-                                            in Computer Science</strong>
+                                        <strong>Bachelors in Computer Science (Ongoing)</strong>
                                         <br />Information Technology
                                     </p>
                                 </div>
@@ -157,7 +178,7 @@
                                     </p>
                                     <p>
                                         <a role="button" id="resume" class="btn btn-glance" href="Edu/diploma.pdf"
-                                            download="anson-diploma" target="_blank">View Certificate</a>
+                                            download="anson-diploma" target="_blank">Download Certificate</a>
                                     </p>
                                 </div>
                             </div>
@@ -182,7 +203,7 @@
                                     </p>
                                     <p>
                                         <a role="button" id="resume" class="btn btn-glance" href="Edu/hsc.pdf"
-                                            download="anson-hsc" target="_blank">View Certificate</a>
+                                            download="anson-hsc" target="_blank">Download Certificate</a>
                                     </p>
                                 </div>
                             </div>
@@ -202,7 +223,7 @@
                                     <p><strong>Secondary School Certificate</strong></p>
                                     <p>
                                         <a role="button" id="resume" class="btn btn-glance" href="Edu/ssc.pdf"
-                                            download="anson-ssc" target="_blank">View Certificate</a>
+                                            download="anson-ssc" target="_blank">Download Certificate</a>
                                     </p>
                                 </div>
                             </div>
@@ -259,7 +280,7 @@
                                     <p>
                                         <a role="button" id="resume" class="btn btn-glance" href="Exp/sealord.pdf"
                                             download="SealordEntertainment-ExperienceCertificate"
-                                            target="_blank">Experience Letter</a>
+                                            target="_blank">Download Experience Letter</a>
                                     </p>
                                 </div>
                             </div>
@@ -295,7 +316,7 @@
                                     <p>
                                         <a role="button" id="resume" class="btn btn-glance" href="Exp/traversia.pdf"
                                             download="TraversiaTechnology-ExperienceCertificate"
-                                            target="_blank">Experience Letter</a>
+                                            target="_blank">Download Experience Letter</a>
                                     </p>
                                 </div>
                             </div>
@@ -334,8 +355,8 @@
                                     </p>
                                     <p>
                                         <a role="button" id="resume" class="btn btn-glance" href="Exp/akaarah.pdf"
-                                            download="Akaarah-ExperienceCertificate" target="_blank">Experience
-                                            Letter</a>
+                                            download="AkaarahMediatech-ExperienceCertificate" target="_blank">Download
+                                            Experience Letter</a>
                                     </p>
                                 </div>
                             </div>
@@ -372,6 +393,8 @@
                                     <li><a href="" data-filter=".prototype">Prototype</a></li>
                                     <li><a href="" data-filter=".database">Database</a></li>
                                     <li><a href="" data-filter=".network">Networking</a></li>
+                                    <li><a href="" data-filter=".project-management">Project Management</a></li>
+                                    <li><a href="" data-filter=".BI">Business Intelligence</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -380,13 +403,15 @@
                         <!-- portfolio_container -->
                         <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
                             <!-- single work -->
-                            <div class="col-md-4 col-sm-6 website">
+                            <div class="col-md-6 col-sm-6 website">
                                 <a id="demo01" href="#animatedModal" class="portfolio_item">
                                     <img src="img/project1/p6.png" alt="image" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info">
-                                                <title>ABC Learning Centre</title> <em>Website</em>
+                                                <title>ABC Learning Centre</title>
+                                                <em>* Static Website *</em>
+                                                <em>HTML, CSS, JS</em>
                                             </div>
                                         </div>
                                     </div>
@@ -395,13 +420,15 @@
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 col-sm-6 prototype">
+                            <div class="col-md-6 col-sm-6 prototype">
                                 <a id="demo02" href="#animatedModal2" class="portfolio_item">
-                                    <img src="img/project2/p5.png" alt="image" />
+                                    <img src="img/project2/p4.png" alt="image" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info">
-                                                <title>ABC Jobs</title> <em>Prototype</em>
+                                                <title>ABC Jobs</title>
+                                                <em>* Prototype *</em>
+                                                <em>Axure RP</em>
                                             </div>
                                         </div>
                                     </div>
@@ -410,13 +437,15 @@
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 col-sm-6 database">
+                            <div class="col-md-6 col-sm-6 database">
                                 <a id="demo03" href="#animatedModal3" class="portfolio_item">
                                     <img src="img/project3/p5.png" alt="image" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info">
-                                                <title>Database Development</title> <em>Database</em>
+                                                <title>Database Development of ABC Jobs</title>
+                                                <em>* Database *</em>
+                                                <em>SQL</em>
                                             </div>
                                         </div>
                                     </div>
@@ -425,13 +454,34 @@
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 col-sm-6 website">
+                            <div class="col-md-6 col-sm-6 project-management">
+                                <a id="demo07" href="#animatedModal7" class="portfolio_item">
+                                    <img src="img/project7/p3.jpeg" alt="image" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info">
+                                                <title>Managing Project Timeline of ABC Jobs</title>
+                                                <em>* Project Management *</em>
+                                                <em>Microsoft Project</em>
+                                                <em>Schedule, Gantt Chart</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-6 col-sm-6 website">
                                 <a id="demo04" href="#animatedModal4" class="portfolio_item">
                                     <img src="img/project4/p1.png" alt="image" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info">
-                                                <title>ABC Jobs</title> <em>Website / Framework</em>
+                                                <title>ABC Jobs</title>
+                                                <em>* Dynamic Website *</em>
+                                                <em>Java, Struts2, MySQL</em>
+                                                <em>HTML, CSS, JS</em>
                                             </div>
                                         </div>
                                     </div>
@@ -440,20 +490,95 @@
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 col-sm-6 network">
+                            <div class="col-md-6 col-sm-6 network">
                                 <a id="demo05" href="#animatedModal5" class="portfolio_item">
-                                    <img src="img/project5/p2.png" alt="image" />
+                                    <img src="img/project5/p1.png" alt="image" />
                                     <div class="portfolio_item_hover">
                                         <div class="portfolio-border clearfix">
                                             <div class="item_info">
                                                 <title>Network Infrastructure</title>
-                                                <em>Networking</em>
+                                                <em>* Networking *</em>
+                                                <em>Cysco Packet Tracer</em>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-6 col-sm-6 website">
+                                <a id="demo06" href="#animatedModal6" class="portfolio_item">
+                                    <img src="img/project6/p1.png" alt="image" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info">
+                                                <title>AAA Company</title>
+                                                <em>* Dynamic Website *</em>
+                                                <em>Liferay, Java, Servlet</em>
+                                                <em>HTML, CSS, JS</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-6 col-sm-6 BI">
+                                <a id="demo08" href="#animatedModal8" class="portfolio_item">
+                                    <img src="img/project8/p2.png" alt="image" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info">
+                                                <title>Company Employee Attrition Report</title>
+                                                <em>* Business Intelligence *</em>
+                                                <em>Miscosoft Power BI</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-6 col-sm-6 project-management">
+                                <a id="demo09" href="#animatedModal9" class="portfolio_item">
+                                    <img src="img/project9/p1.png" alt="image" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info">
+                                                <title>Managing Meals on Wheels Project</title>
+                                                <em>* Project Management *</em>
+                                                <em>Microsoft Project</em>
+                                                <em>Schedule, Gantt Chart, FlowCharts</em>
+                                                <em>Risk Analysis, Storyboards</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-6 col-sm-6 website">
+                                <a id="demo10" href="#animatedModal10" class="portfolio_item">
+                                    <img src="img/project10/p1.png" alt="image" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info">
+                                                <title>Meals on Wheels</title>
+                                                <em>* Dynamic Website *</em>
+                                                <em>Angular, Java, Spring Boot, MySQL </em>
+                                                <em>HTML, CSS, JS</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+
+
                         </div>
                         <!-- end portfolio_container -->
                     </div>
@@ -578,7 +703,7 @@
                             <div class="col-md-6">
                                 <img src="img/project1/p6.png" class="project-img" width="500px" height="320px" />
                                 <div class="h-50"></div>
-                                <hr />
+                                <div class="h-50"></div>
                                 <div class="h-50"></div>
                             </div>
                         </div>
@@ -602,7 +727,7 @@
                         <div class="dashed">
                             <h3>ABC Jobs Portal</h3>
                         </div>
-                        <h6>Prototyping</h6>
+                        <h6>Prototype</h6>
                         <br />
                         <h5>
                             This project is about creating a prototype for the 'to be made
@@ -641,6 +766,8 @@
                                 <div class="h-50"></div>
                             </div>
                             <div class="h-50"></div>
+                            <div class="h-50"></div>
+                            <div class="h-50"></div>
                         </div>
                     </div>
                 </div>
@@ -677,7 +804,7 @@
                         <br /><br />
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="img/project3/p1.png" class="project-img" width="550px" height="320px" />
+                                <img src="img/project3/p1.png" class="project-img" width="100%" height="320px" />
                             </div>
                             <div class="col-md-6">
                                 <img src="img/project3/p2.png" class="project-img" width="600px" height="320px" />
@@ -685,17 +812,22 @@
                         </div>
                         <div class="row">
                             <div class="h-50"></div>
-                            <div class="col-md-6">
-                                <img src="img/project3/p3.png" class="project-img" width="500px" height="580px" />
+                            <div class="col-md-12">
+                                <img src="img/project3/p3.png" class="project-img" width="60%" />
                             </div>
-                            <div class="col-md-6">
-                                <img src="img/project3/p4.png" class="project-img" width="500px" height="580px" />
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-12">
+                                <img src="img/project3/p4.png" class="project-img" width="60%" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="h-50"></div>
                             <div class="col-md-12">
                                 <img src="img/project3/p5.png" class="project-img" width="800px" height="550px" />
+                                <div class="h-50"></div>
+                                <div class="h-50"></div>
                                 <div class="h-50"></div>
                             </div>
                         </div>
@@ -814,6 +946,342 @@
                             <div class="h-50"></div>
                             <div class="col-md-12">
                                 <img src="img/project5/p2.png" class="project-img" />
+                                <div class="h-50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DEMO06-->
+    <div id="animatedModal6" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal6 close-popup-modal">
+            <i class="ion-close-round"></i>
+        </div>
+        <div class="clearfix"></div>
+        <div class="modal-content" style="background-color: rgba(216, 216, 216, 0.356)">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-12" style="text-align: center">
+                        <div class="dashed">
+                            <h3>AAA Company</h3>
+                        </div>
+                        <h6>Dynamic Website</h6>
+                        <br />
+                        <h5>
+                            AAA company is a hosting company which sells hosting or cloud services to general public for
+                            a fixed price.
+                            This portal was developed in an attempt to learn <u>Liferay framework with Java and
+                                servlets</u>. This web portal
+                            had login, registration, adding a service and adding user to a specific service.
+                        </h5>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/project6/p1.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project6/p2.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project6/p3.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project6/p4.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project6/p5.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project6/p6.png" class="project-img" width="500px" height="320px" />
+                                <div class="h-50"></div>
+                                <div class="h-50"></div>
+                                <div class="h-50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DEMO07-->
+    <div id="animatedModal7" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal7 close-popup-modal">
+            <i class="ion-close-round"></i>
+        </div>
+        <div class="clearfix"></div>
+        <div class="modal-content" style="background-color: rgba(216, 216, 216, 0.356)">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-12" style="text-align: center">
+                        <div class="dashed">
+                            <h3>Project Timeline of ABC Jobs Portal</h3>
+                        </div>
+                        <h6>Project Management</h6>
+                        <br />
+                        <h5>
+                            The timeline and gantt chart is essential to make sure how much time might this project
+                            need. Using this timeline and schedule as the reference tasks can be achieved on or before
+                            the alloted time. Gantt chart helps to get the flow and allocated reasources according to
+                            the deadline it sets for a given task. These schedules and gantt chart were created by using
+                            <u>Microsoft Access and Project Libre</u>.
+                        </h5>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/project7/p1.png" class="project-img" width="100%" />
+                                <img src="img/project7/p2.jpeg" class="project-img" width="100%" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project7/p3.jpeg" class="project-img" width="100%" />
+                                <img src="img/project7/p4.jpeg" class="project-img" width="100%" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="h-50"></div>
+                            <div class="h-50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DEMO08-->
+    <div id="animatedModal8" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal8 close-popup-modal">
+            <i class="ion-close-round"></i>
+        </div>
+        <div class="clearfix"></div>
+        <div class="modal-content" style="background-color: rgba(216, 216, 216, 0.356)">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-12" style="text-align: center">
+                        <div class="dashed">
+                            <h3>Company Employee Attrition</h3>
+                        </div>
+                        <h6>Business Intelligence</h6>
+                        <br />
+                        <h5>
+                            Employees were quitting a company one after the other in different levels of Management. To
+                            find the solution to this problem, the need to find the behind thier attrition against the
+                            company rises. We find the reason behind this using <u>Microsoft Power BI</u> as a Business
+                            Intelligence tool that helps visualise the data in structural format.
+                        </h5>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="img/project8/p4.png" class="project-img" width="800px" height="520px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project8/p1.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project8/p2.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project8/p3.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project8/p5.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project8/p6.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project8/p7.png" class="project-img" width="500px" height="320px" />
+                                <div class="h-50"></div>
+                                <div class="h-50"></div>
+                                <div class="h-50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DEMO09-->
+    <div id="animatedModal9" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal9 close-popup-modal">
+            <i class="ion-close-round"></i>
+        </div>
+        <div class="clearfix"></div>
+        <div class="modal-content" style="background-color: rgba(216, 216, 216, 0.356)">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-12" style="text-align: center">
+                        <div class="dashed">
+                            <h3>Managing Meals on Wheels Project</h3>
+                        </div>
+                        <h6>Project Management</h6>
+                        <br />
+                        <h5>
+                            The project management implementation on Meals on Wheels project were made possible by using
+                            tools like <u>Microsoft Access for Timeline and Gantt chart</u>, <u>Creatly for
+                                Flowcharts</u> and <u>Figma for Story boards</u>. First Agile methodology in SDLC was
+                            used and the requirements were met. FLowcharts were made to analyze the possible risks and
+                            the flow of the project. Storyboards were created at the final stage of prototype.
+                        </h5>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="img/project9/p1.png" class="project-img" width="800px" height="420px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project9/p2.png" class="project-img" width="100%" />
+                                <img src="img/project9/p3.png" class="project-img" width="100%" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project9/p5.png" class="project-img" width="100%" />
+                                <img src="img/project9/p6.png" class="project-img" width="100%" />
+                                <img src="img/project9/p7.png" class="project-img" width="100%" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-12">
+                                <img src="img/project9/p8.png" class="project-img" width="800px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-12">
+                                <img src="img/project9/p9.png" class="project-img" width="100%" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project9/p10.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project9/p11.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project9/p12.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project9/p13.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project9/p14.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project9/p15.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-12">
+                                <img src="img/project9/p16.png" class="project-img" width="500px" height="320px" />
+                                <div class="h-50"></div>
+                                <div class="h-50"></div>
+                                <div class="h-50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DEMO10-->
+    <div id="animatedModal10" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal10 close-popup-modal">
+            <i class="ion-close-round"></i>
+        </div>
+        <div class="clearfix"></div>
+        <div class="modal-content" style="background-color: rgba(216, 216, 216, 0.356)">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-12" style="text-align: center">
+                        <div class="dashed">
+                            <h3>Meals on Wheels Portal</h3>
+                        </div>
+                        <h6>Dynamic Website</h6>
+                        <br />
+                        <h5>
+                            Meals on Wheels is a project to create a web portal with functionalities to be able deliver
+                            hot or cold meals to eligible adults who can't prepare food for themselves. This portal has
+                            users like
+                            Partners, Caregivers, Volunteers and ofcourse Members who will receiver food. This project
+                            is built using
+                            the Stack <u>Angular + Java - Spring boot + MySQL</u> This portal has registration, login
+                            functionalities
+                            for all user types and along with verfication process for partners and members. The protal
+                            also has admin
+                            and user functionalities such as menu creation, food preferences and many more.
+                        </h5>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/project10/p1.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project10/p2.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project10/p3.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project10/p4.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project10/p5.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project10/p6.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="h-50"></div>
+                            <div class="col-md-6">
+                                <img src="img/project10/p7.png" class="project-img" width="500px" height="320px" />
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/project10/p8.png" class="project-img" width="500px" height="320px" />
+                                <div class="h-50"></div>
+                                <div class="h-50"></div>
                                 <div class="h-50"></div>
                             </div>
                         </div>
