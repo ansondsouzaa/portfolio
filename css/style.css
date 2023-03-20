@@ -1,26 +1,3 @@
-/*
-* Resume template
-* Created by : Ahmed Essa
-* website : www.ahmedessa.net
-*/
-
-
-/* Table of Content
-==================================================
-	- Google fonts & font family -
-	- typography -
-	- General -
-    - Preloader -
-	- Header -
-    - home section -
-    - About section -
-    - experience section -
-    - projects section -
-    - Contact section -
-    - Responsive media queries -
-*/
-
-
 /* Google fonts & font family
 ==================================================*/
 
@@ -188,7 +165,7 @@ h-10 {
 
 #gif {
     position: absolute;
-    background: #fff url(../img/preloader/preaload.gif) center center no-repeat ;
+    background: #fff url(../img/preloader/preaload.gif) center center cover no-repeat fixed;
     background-size: cover;
     height: 160px;
     width: 160px;
