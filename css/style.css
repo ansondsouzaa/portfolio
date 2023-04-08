@@ -38,14 +38,15 @@ h2 {
     color: red;
 }
 
-span:before {
-    content: '';
-    animation: animate infinite 15s;
-}
 
 .logo {
     width: 200px;
     margin-right: 20%;
+}
+
+span:before {
+    content: 'Full stack web developer';
+    animation: animate infinite 15s;
 }
 
 @keyframes animate {
@@ -53,16 +54,24 @@ span:before {
         content: 'Full stack web developer';
     }
 
+    25% {
+        content: 'Angular developer';
+    }
+
     50% {
-        content: 'UI & UX designer';
+        content: 'Software developer';
+    }
+
+    75% {
+        content: 'Front end developer';
     }
 
     100% {
-        content: 'Software Engineer';
+        content: 'UI & UX designer';
     }
 }
 
-	
+
 /* Dashed */
 
 .dashed {
@@ -97,9 +106,12 @@ span:before {
 ==================================================*/
 
 body {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -165,11 +177,10 @@ h-10 {
 
 #gif {
     position: absolute;
-    background: #fff url(../img/preloader/preaload.gif) center center cover no-repeat fixed;
+    background: #fff url(../img/preloader/preaload.gif) center center no-repeat;
     background-size: cover;
-    height: 160px;
-    width: 160px;
-    margin: -30px 0 0 -30px;
+    height: 120px;
+    width: 120px;
     left: 45%;
     top: 45%;
 }
@@ -192,51 +203,25 @@ h-10 {
 .preloader {
     height: 40px;
     width: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
 }
 
 .preloader:before {
     content: "";
     display: block;
     position: absolute;
-    left: -1px;
-    top: -1px;
     height: 100%;
     width: 100%;
 }
 
-.preloader>.icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 25px;
-    width: 10.6px;
-    margin-top: -12.5px;
-    margin-left: -5.3px;
-    -webkit-animation: wink 1s ease-in-out infinite alternate;
-    animation: wink 1s ease-in-out infinite alternate
-}
 
 @media only screen and (min-width:768px) {
     .preloader {
         height: 60px;
         width: 60px;
-        margin-top: -30px;
-        margin-left: -30px
     }
 
     .preloader:before {
-        left: -2px;
-        top: -2px;
         border-width: 2px
-    }
-
-    .preloader>.icon {
-        height: 37.5px;
-        width: 15.9px;
-        margin-top: -18.75px;
-        margin-left: -7.95px
     }
 }
 
@@ -244,15 +229,6 @@ h-10 {
     .preloader {
         height: 60px;
         width: 60px;
-        margin-top: -30px;
-        margin-left: -30px
-    }
-
-    .preloader>.icon {
-        height: 50px;
-        width: 21.2px;
-        margin-top: -25px;
-        margin-left: -10.6px
     }
 }
 
@@ -358,7 +334,7 @@ a.active {
     color: #D84627;
 }
 
-.left-15{
+.left-15 {
     left: 15px;
 }
 
@@ -714,7 +690,7 @@ a.active {
     float: right;
     margin: 20px;
     font-size: 22px;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -725,45 +701,15 @@ a.active {
     right: 14px;
 }
 
-.animatedModal-on .close-popup-modal {
-    opacity: 1;
+.ion-close-round::before {
+    position: relative;
 }
 
-.animatedModal2-on .close-popup-modal {
-    opacity: 1;
+.height100 {
+    min-height: 75vh;
 }
 
-.animatedModal3-on .close-popup-modal {
-    opacity: 1;
-}
 
-.animatedModal4-on .close-popup-modal {
-    opacity: 1;
-}
-
-.animatedModal5-on .close-popup-modal {
-    opacity: 1;
-}
-
-.animatedModal6-on .close-popup-modal {
-    opacity: 1;
-}
-
-.animatedModal7-on .close-popup-modal {
-    opacity: 1;
-}
-
-.animatedModal8-on .close-popup-modal {
-    opacity: 1;
-}
-
-.animatedModal9-on .close-popup-modal {
-    opacity: 1;
-}
-
-.animatedModal10-on .close-popup-modal {
-    opacity: 1;
-}
 
 
 .modal-content h2 {
@@ -883,15 +829,22 @@ fieldset {
     width: 100%;
 }
 
-#resume {
+.resume {
     background-color: #D84627;
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 13px;
     width: 50%;
+    border: 1px solid #D84627;
+}
+.resume:hover {
+    border: 1px solid #D84627;
+    color: #D84627;
+    background-color: transparent;
 }
 
 .navbar-fixed-top {
@@ -939,4 +892,8 @@ fieldset {
     border: 5px solid #D84627;
     padding: 20px;
     border-radius: 500px;
+}
+
+img {
+    pointer-events: none;
 }
